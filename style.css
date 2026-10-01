@@ -1,0 +1,462 @@
+/* policy.gformance.com — 약관·정책 문서 */
+
+:root {
+  --bg: #ffffff;
+  --surface: #f6f7f9;
+  --text: #1d2026;
+  --text-body: #3a3f47;
+  --text-sub: #6b717b;
+  --border: #e3e6ea;
+  --link: #1f6feb;
+  --accent: #a87a1f;
+  --draft-bg: #fff8e6;
+  --draft-border: #f2d48a;
+  --draft-text: #7a5512;
+  --info-bg: #eef4ff;
+  --info-border: #c7d8f7;
+  --add-bg: #e8f7ec;
+  --add-text: #1a6b34;
+  --del-bg: #fdecec;
+  --del-text: #a12a2a;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1013;
+    --surface: #171a1f;
+    --text: #eef0f3;
+    --text-body: #c9cdd3;
+    --text-sub: #8d939c;
+    --border: #2a2f36;
+    --link: #6ea8ff;
+    --accent: #e5c07b;
+    --draft-bg: #2a2214;
+    --draft-border: #6b5424;
+    --draft-text: #f0d595;
+    --info-bg: #142033;
+    --info-border: #2b4266;
+    --add-bg: #12301d;
+    --add-text: #8fe0a8;
+    --del-bg: #3a1717;
+    --del-text: #f2a5a5;
+    color-scheme: dark;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-body);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+a {
+  color: var(--link);
+  text-underline-offset: 2px;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.85em;
+  word-break: break-all;
+}
+
+.wrap {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ── 사이트 헤더 / 푸터 ── */
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.site-header .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.brand {
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  font-size: 14px;
+}
+
+.site-nav a {
+  color: var(--text-sub);
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.site-footer {
+  margin-top: 64px;
+  border-top: 1px solid var(--border);
+  color: var(--text-sub);
+  font-size: 13px;
+}
+
+.site-footer .wrap {
+  padding-top: 20px;
+  padding-bottom: 32px;
+}
+
+.site-footer p {
+  margin: 4px 0;
+}
+
+/* ── 문서 ── */
+
+.doc-head {
+  padding: 36px 0 18px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.doc-kind {
+  margin: 0 0 6px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(22px, 4vw, 28px);
+  line-height: 1.35;
+}
+
+.doc-meta {
+  margin: 8px 0 0;
+  color: var(--text-sub);
+  font-size: 14px;
+}
+
+.doc-links {
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+
+.intro {
+  margin: 0 0 20px;
+}
+
+h2.chapter {
+  margin: 36px 0 14px;
+  color: var(--text);
+  font-size: 18px;
+}
+
+.article {
+  margin: 0 0 24px;
+  scroll-margin-top: 16px;
+}
+
+.article h3 {
+  margin: 0 0 6px;
+  color: var(--text);
+  font-size: 15.5px;
+}
+
+.article p {
+  margin: 0 0 4px;
+}
+
+ol.paragraphs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: para;
+}
+
+ol.paragraphs > li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 4px;
+  counter-increment: para;
+}
+
+/* 항 번호: 원 안의 숫자 (글꼴과 관계없이 같은 크기) */
+ol.paragraphs > li::before {
+  content: counter(para);
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--text-sub);
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+}
+
+ol.items {
+  margin: 2px 0 6px;
+  padding-left: 24px;
+}
+
+ol.items > li {
+  margin-bottom: 2px;
+}
+
+.addenda p {
+  margin-bottom: 6px;
+}
+
+/* ── 표 ── */
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 8px 0 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 9px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 700;
+}
+
+table.history td ul {
+  margin: 0 0 4px;
+  padding-left: 18px;
+}
+
+.sub {
+  color: var(--text-sub);
+  font-size: 12.5px;
+}
+
+.hash {
+  color: var(--text-sub);
+}
+
+/* ── 안내 상자 ── */
+
+.notice {
+  margin: 0 0 20px;
+  padding: 12px 14px;
+  border: 1px solid var(--info-border);
+  border-radius: 10px;
+  background: var(--info-bg);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.notice strong {
+  margin-right: 6px;
+}
+
+.notice ul {
+  margin: 6px 0 0;
+  padding-left: 20px;
+}
+
+.notice-draft {
+  border-color: var(--draft-border);
+  background: var(--draft-bg);
+  color: var(--draft-text);
+}
+
+.badge {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge-effective {
+  border-color: var(--add-text);
+  color: var(--add-text);
+}
+
+.badge-draft,
+.badge-material {
+  border-color: var(--draft-border);
+  color: var(--draft-text);
+  background: var(--draft-bg);
+}
+
+.badge-scheduled {
+  border-color: var(--info-border);
+  color: var(--link);
+}
+
+.badge-superseded {
+  color: var(--text-sub);
+}
+
+/* ── 문서 하단 ── */
+
+.doc-foot {
+  margin-top: 36px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  color: var(--text-sub);
+  font-size: 13px;
+}
+
+.doc-foot dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 2px 14px;
+  margin: 0;
+}
+
+.doc-foot dd {
+  margin: 0;
+}
+
+/* ── 개정 전후 비교 ── */
+
+.diff {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.diff > div {
+  padding: 4px 12px 4px 34px;
+  text-indent: -22px;
+  white-space: pre-wrap;
+}
+
+.diff-mark {
+  display: inline-block;
+  width: 22px;
+  text-indent: 0;
+  font-weight: 700;
+}
+
+.diff-add {
+  background: var(--add-bg);
+  color: var(--add-text);
+}
+
+.diff-del {
+  background: var(--del-bg);
+  color: var(--del-text);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.diff-skip {
+  background: var(--surface);
+  color: var(--text-sub);
+  text-align: center;
+  font-size: 12.5px;
+}
+
+/* ── 목록 ── */
+
+.intro-block {
+  padding: 36px 0 8px;
+}
+
+.intro-block p {
+  margin: 10px 0 18px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.card h2 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.card h2 a:hover {
+  text-decoration: underline;
+}
+
+@media print {
+  .site-header,
+  .site-footer,
+  .doc-links {
+    display: none;
+  }
+}

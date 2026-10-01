@@ -1,0 +1,110 @@
+{
+  "id": "marketing-consent",
+  "kind": "consent",
+  "version": "0.1",
+  "draft": true,
+  "title": "마케팅 정보 수신 동의",
+  "announcedAt": null,
+  "effectiveAt": null,
+  "material": false,
+  "changeSummary": [
+    "임시 약관"
+  ],
+  "meta": {
+    "required": false,
+    "withdrawable": true,
+    "reconsentOnChange": true,
+    "renoticeMonths": 24
+  },
+  "content": {
+    "intro": "Run:on(이하 \"회사\")는 GFORMANCE(Golden Performance)의 새로운 기능, 이벤트 및 혜택 정보를 안내하기 위하여 아래와 같이 개인정보를 이용하고 광고성 정보를 전송합니다. 이 동의는 선택 사항입니다.",
+    "chapters": [
+      {
+        "title": "",
+        "articles": [
+          {
+            "number": null,
+            "title": "1. 수집·이용 목적, 항목 및 보유기간",
+            "paragraphs": [
+              {
+                "text": "",
+                "table": {
+                  "headers": [
+                    "수집·이용 목적",
+                    "수집 항목",
+                    "보유·이용 기간"
+                  ],
+                  "rows": [
+                    [
+                      "[선택] 신규 기능·서비스 소개, 이벤트·혜택 등 광고성 정보 전송",
+                      "이메일, 연락처(전화번호, 회원이 입력한 경우), 수신 동의 일시",
+                      "동의 철회 또는 회원 탈퇴 시까지"
+                    ]
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "number": null,
+            "title": "2. 전송 방법",
+            "paragraphs": [
+              {
+                "text": "",
+                "items": [
+                  "이메일",
+                  "앱 푸시 알림 (기기 설정에서 알림을 허용한 경우)",
+                  "문자 메시지 (연락처를 입력한 경우)"
+                ]
+              },
+              {
+                "text": "회사는 오후 9시부터 다음 날 오전 8시까지는 별도의 동의 없이 광고성 정보를 전송하지 않습니다."
+              }
+            ]
+          },
+          {
+            "number": null,
+            "title": "3. 동의를 거부할 권리 및 불이익",
+            "paragraphs": [
+              {
+                "text": "회원은 마케팅 정보 수신 동의를 거부할 권리가 있으며, 동의하지 않아도 회원가입과 서비스 이용에 제한이 없습니다. 다만 이벤트·혜택 안내를 받을 수 없습니다."
+              }
+            ]
+          },
+          {
+            "number": null,
+            "title": "4. 동의 철회",
+            "paragraphs": [
+              {
+                "text": "회원은 언제든지 다음 방법으로 수신 동의를 철회할 수 있습니다.",
+                "items": [
+                  "서비스 내 계정 설정 화면에서 수신 설정 변경",
+                  "수신한 이메일 하단의 수신 거부 링크",
+                  "고객 문의(info@runon.io)"
+                ]
+              },
+              {
+                "text": "회사는 수신 동의 또는 철회 요청을 처리한 경우 처리 일자와 결과를 회원에게 알립니다."
+              }
+            ]
+          },
+          {
+            "number": null,
+            "title": "5. 유의사항",
+            "paragraphs": [
+              {
+                "text": "",
+                "items": [
+                  "회사는 수신 동의를 받은 날부터 2년마다 회원에게 수신 동의 여부를 다시 확인합니다.",
+                  "서비스 이용에 필요한 공지사항, 약관·정책 변경, 결제·보안 관련 안내는 수신 동의 여부와 관계없이 전송될 수 있습니다.",
+                  "이 동의서의 현재 및 이전 버전은 약관 게시 페이지(https://policy.gformance.com)에서 확인할 수 있습니다."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "addenda": []
+  }
+}

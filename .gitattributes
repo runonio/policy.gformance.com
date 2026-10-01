@@ -1,0 +1,5 @@
+# 모든 텍스트 파일을 LF 로 저장 (Windows 에서 편집해도 원문 바이트가 바뀌지 않도록)
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.ico binary
