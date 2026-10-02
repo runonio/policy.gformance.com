@@ -1,6 +1,6 @@
 {
   "site": "https://policy.gformance.com",
-  "generatedAt": "2026-10-01T10:47:13.234944Z",
+  "generatedAt": "2026-10-02T13:12:45.577015Z",
   "documents": {
     "terms": {
       "kind": "agreement",
@@ -8,7 +8,7 @@
       "path": "/terms/",
       "required": true,
       "reconsentOnChange": true,
-      "current": "0.1",
+      "current": "0.2",
       "currentStatus": "draft",
       "upcoming": null,
       "versions": [
@@ -24,6 +24,19 @@
           "sha256": "0c5b4d10ac440e8f0625e8f963ff0cdbc9d37b7244aa2d3302240f67363d118b",
           "json": "/terms/0.1.json",
           "page": "/terms/0.1/"
+        },
+        {
+          "version": "0.2",
+          "draft": true,
+          "announcedAt": null,
+          "effectiveAt": null,
+          "material": false,
+          "changeSummary": [
+            "회사 알고리즘의 역설계·무단 도용 금지 명시 (제22조, 제23조, 제27조)"
+          ],
+          "sha256": "cbeb7641e48dcb3ff3c9d27fd010a8319045c00e493ebbf70a0c8d8ed5e73ae0",
+          "json": "/terms/0.2.json",
+          "page": "/terms/0.2/"
         }
       ]
     },
