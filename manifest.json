@@ -1,6 +1,6 @@
 {
   "site": "https://policy.gformance.com",
-  "generatedAt": "2026-10-02T18:55:00.526511Z",
+  "generatedAt": "2026-10-04T02:52:57.721169Z",
   "documents": {
     "terms": {
       "kind": "agreement",
@@ -45,9 +45,9 @@
           "effectiveAt": null,
           "material": false,
           "changeSummary": [
-            "임시 약관"
+            "제5조 본인 명의 계좌의 연동 신설(이후 조 번호 1씩 변경), 지원하지 않는 Apple 로그인 문구 삭제"
           ],
-          "sha256": "83d64d381df71f711b6c9ec5273c61201594a0a908d636216174ee2b73589408",
+          "sha256": "7701b1db9c91241b9ad8a0ccb1a91567b4b0a9265e0ded322965c525435fda2d",
           "json": "/terms/0.3.json",
           "page": "/terms/0.3/"
         }
@@ -58,7 +58,7 @@
       "title": "개인정보처리방침",
       "path": "/privacy/",
       "consentRequired": false,
-      "current": "0.1",
+      "current": "0.2",
       "currentStatus": "draft",
       "upcoming": null,
       "versions": [
@@ -74,6 +74,19 @@
           "sha256": "e2a91df31e4fe87e63ef7421564a3cf16aea8b1048e5f22d7ead60770c4c47ce",
           "json": "/privacy/0.1.json",
           "page": "/privacy/0.1/"
+        },
+        {
+          "version": "0.2",
+          "draft": true,
+          "announcedAt": null,
+          "effectiveAt": null,
+          "material": false,
+          "changeSummary": [
+            "지원하지 않는 Apple 로그인 문구 삭제"
+          ],
+          "sha256": "2a5d2d13e63e3702da06d66aab792211014a857f67678c841c79377b5da36c7f",
+          "json": "/privacy/0.2.json",
+          "page": "/privacy/0.2/"
         }
       ]
     },
@@ -84,7 +97,7 @@
       "required": true,
       "withdrawable": true,
       "reconsentOnChange": true,
-      "current": "0.1",
+      "current": "0.2",
       "currentStatus": "draft",
       "upcoming": null,
       "versions": [
@@ -100,6 +113,19 @@
           "sha256": "d9b10e917a7dd7408d0385cecc59393383d43d88c22d496a1fb405cdd9eaca73",
           "json": "/consents/privacy/0.1.json",
           "page": "/consents/privacy/0.1/"
+        },
+        {
+          "version": "0.2",
+          "draft": true,
+          "announcedAt": null,
+          "effectiveAt": null,
+          "material": false,
+          "changeSummary": [
+            "지원하지 않는 Apple 로그인 문구 삭제, 소셜 이메일 미제공 시 회원이 인증한 이메일 사용 명시"
+          ],
+          "sha256": "fd55fbf9fe855f8b065f8be162897e7980e35e7ffc1fa8c4d506f15d5b2d0674",
+          "json": "/consents/privacy/0.2.json",
+          "page": "/consents/privacy/0.2/"
         }
       ]
     },
