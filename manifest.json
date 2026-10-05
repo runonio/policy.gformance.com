@@ -1,6 +1,6 @@
 {
   "site": "https://policy.gformance.com",
-  "generatedAt": "2026-10-04T02:52:57.721169Z",
+  "generatedAt": "2026-10-05T00:30:18.537019Z",
   "documents": {
     "terms": {
       "kind": "agreement",
@@ -8,7 +8,7 @@
       "path": "/terms/",
       "required": true,
       "reconsentOnChange": true,
-      "current": "0.3",
+      "current": "0.4",
       "currentStatus": "draft",
       "upcoming": null,
       "versions": [
@@ -50,6 +50,19 @@
           "sha256": "7701b1db9c91241b9ad8a0ccb1a91567b4b0a9265e0ded322965c525435fda2d",
           "json": "/terms/0.3.json",
           "page": "/terms/0.3/"
+        },
+        {
+          "version": "0.4",
+          "draft": true,
+          "announcedAt": null,
+          "effectiveAt": null,
+          "material": false,
+          "changeSummary": [
+            "백업을 회사 서버 보관에서 회원 직접 보관(비밀번호 암호화·압축 파일)으로 변경 (제2조, 제10조, 제11조, 제13조, 제22조, 제25조, 제27조, 제30조)"
+          ],
+          "sha256": "3d412bda500d611fb698156530707198ff342f0b1e432533a49d4c4f06824b6e",
+          "json": "/terms/0.4.json",
+          "page": "/terms/0.4/"
         }
       ]
     },
@@ -58,7 +71,7 @@
       "title": "개인정보처리방침",
       "path": "/privacy/",
       "consentRequired": false,
-      "current": "0.2",
+      "current": "0.3",
       "currentStatus": "draft",
       "upcoming": null,
       "versions": [
@@ -87,6 +100,19 @@
           "sha256": "2a5d2d13e63e3702da06d66aab792211014a857f67678c841c79377b5da36c7f",
           "json": "/privacy/0.2.json",
           "page": "/privacy/0.2/"
+        },
+        {
+          "version": "0.3",
+          "draft": true,
+          "announcedAt": null,
+          "effectiveAt": null,
+          "material": false,
+          "changeSummary": [
+            "백업 파일을 회사 서버에 보관하지 않고 회원이 직접 보관 (제2조)"
+          ],
+          "sha256": "3cb852e4d3e661edd84b9188e8a8fa96cc4543303bf7052f7d9147d61e493e62",
+          "json": "/privacy/0.3.json",
+          "page": "/privacy/0.3/"
         }
       ]
     },
@@ -97,7 +123,7 @@
       "required": true,
       "withdrawable": true,
       "reconsentOnChange": true,
-      "current": "0.2",
+      "current": "0.3",
       "currentStatus": "draft",
       "upcoming": null,
       "versions": [
@@ -126,6 +152,19 @@
           "sha256": "fd55fbf9fe855f8b065f8be162897e7980e35e7ffc1fa8c4d506f15d5b2d0674",
           "json": "/consents/privacy/0.2.json",
           "page": "/consents/privacy/0.2/"
+        },
+        {
+          "version": "0.3",
+          "draft": true,
+          "announcedAt": null,
+          "effectiveAt": null,
+          "material": false,
+          "changeSummary": [
+            "백업 파일을 회사 서버에 보관하지 않고 회원이 직접 보관 (2. 수집하지 않는 정보)"
+          ],
+          "sha256": "5c8fa78459d702faac078971612882e4dbb999caa9bd7144d7d996eccc5569f5",
+          "json": "/consents/privacy/0.3.json",
+          "page": "/consents/privacy/0.3/"
         }
       ]
     },
