@@ -1,6 +1,6 @@
 {
   "site": "https://policy.gformance.com",
-  "generatedAt": "2026-10-05T00:30:18.537019Z",
+  "generatedAt": "2026-10-05T23:02:33.209482Z",
   "documents": {
     "terms": {
       "kind": "agreement",
@@ -8,7 +8,7 @@
       "path": "/terms/",
       "required": true,
       "reconsentOnChange": true,
-      "current": "0.4",
+      "current": "0.5",
       "currentStatus": "draft",
       "upcoming": null,
       "versions": [
@@ -63,6 +63,19 @@
           "sha256": "3d412bda500d611fb698156530707198ff342f0b1e432533a49d4c4f06824b6e",
           "json": "/terms/0.4.json",
           "page": "/terms/0.4/"
+        },
+        {
+          "version": "0.5",
+          "draft": true,
+          "announcedAt": null,
+          "effectiveAt": null,
+          "material": false,
+          "changeSummary": [
+            "AI 사용료 별도 명시: 외부 AI 서비스(ChatGPT·Claude·Gemini 등) 연동 기능만 제공, AI 이용 비용은 회원이 AI 사업자에게 직접 부담 (제2조, 제10조, 제15조, 제19조, 제30조)"
+          ],
+          "sha256": "87e477472a7afee2ccb324b4b78d575d1c95169f972bae97abc46225c10e5c81",
+          "json": "/terms/0.5.json",
+          "page": "/terms/0.5/"
         }
       ]
     },
