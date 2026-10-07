@@ -1,6 +1,6 @@
 {
   "site": "https://policy.gformance.com",
-  "generatedAt": "2026-10-05T23:02:33.209482Z",
+  "generatedAt": "2026-10-06T16:35:08.748039Z",
   "documents": {
     "terms": {
       "kind": "agreement",
@@ -8,7 +8,7 @@
       "path": "/terms/",
       "required": true,
       "reconsentOnChange": true,
-      "current": "0.5",
+      "current": "0.6",
       "currentStatus": "draft",
       "upcoming": null,
       "versions": [
@@ -76,6 +76,19 @@
           "sha256": "87e477472a7afee2ccb324b4b78d575d1c95169f972bae97abc46225c10e5c81",
           "json": "/terms/0.5.json",
           "page": "/terms/0.5/"
+        },
+        {
+          "version": "0.6",
+          "draft": true,
+          "announcedAt": null,
+          "effectiveAt": null,
+          "material": false,
+          "changeSummary": [
+            "오류 보고 조항 신설(제26조): 보낼지와 보낼 내용은 회원이 매번 직접 정하고 회사는 회원의 선택 없이 오류 정보·실행 기록을 전송하지 않음, 이후 조문 번호 1씩 변경(제27조~제32조) (제10조, 제25조)"
+          ],
+          "sha256": "fab5ed8f05a51d70681306ca9984b73ed9295cd929bf0e386cc895d93741e90a",
+          "json": "/terms/0.6.json",
+          "page": "/terms/0.6/"
         }
       ]
     },
@@ -84,7 +97,7 @@
       "title": "개인정보처리방침",
       "path": "/privacy/",
       "consentRequired": false,
-      "current": "0.3",
+      "current": "0.4",
       "currentStatus": "draft",
       "upcoming": null,
       "versions": [
@@ -126,6 +139,19 @@
           "sha256": "3cb852e4d3e661edd84b9188e8a8fa96cc4543303bf7052f7d9147d61e493e62",
           "json": "/privacy/0.3.json",
           "page": "/privacy/0.3/"
+        },
+        {
+          "version": "0.4",
+          "draft": true,
+          "announcedAt": null,
+          "effectiveAt": null,
+          "material": false,
+          "changeSummary": [
+            "오류 보고(회원이 보낼 때마다 선택) 수집 항목·보유 기간(보고 90일, 실행 기록 30일) 추가 (제2조), 오류 보고용 기기 식별값 안내 (제10조)"
+          ],
+          "sha256": "4ea1b1124a4de2974cb4d384771363aa1def29e0be552bd6be47684fe6e3e58f",
+          "json": "/privacy/0.4.json",
+          "page": "/privacy/0.4/"
         }
       ]
     },
